@@ -1,0 +1,80 @@
+flarum-subscriptions:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      following_tooltip: => flarum-subscriptions.ref.following
+      ignoring_tooltip: => flarum-subscriptions.ref.ignoring
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      unfollow_button: "Көзөмөл салбоо"
+      unignore_button: "Четке какпоо"
+      
+    # These translations are used on the page that displays all subscriptions.
+    following:
+      meta_title_text: => flarum-subscriptions.ref.following
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      following_link: "Көзөмөл салынган"
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      new_post_text: "{username} жооп берди"
+
+    # These translations are used in the Settings page.
+    settings:
+      follow_after_reply_label: "Мен жооп берген темаларды автоматтык түрдө көзөмөлдөө"
+      notify_new_post_label: "Мен көзөмөлдөгөн темалардагы жооп"
+
+    # These translations are used in the subscription menu displayed to the right of the post stream.
+    sub_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      following_button: => flarum-subscriptions.ref.following
+      following_text: "Бардык жоопторго кабарлоо"
+      ignoring_button: => flarum-subscriptions.ref.ignoring
+      ignoring_text: "Билдирбөө жана темалардын тизмесинен жашыруу"
+      not_following_button: "Көзөмөл жок"
+      not_following_text: "Айтылганда гана кабарлоо"
+      notify_alert_tooltip: "Жаңы билдирүүлөр пайда болгондо форум эскертмелерин алыңыз"
+      notify_email_tooltip: "Жаңы билдирүүлөр пайда болгондо электрондук каттарды алыңыз"
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when a post is made in a subscribed discussion
+    new_post:
+      subject: "Тема боюнча жаңы билдирүү"
+      body: |
+        Салам {recipient_display_name},
+        
+        {poster_display_name} Сиз көз салып жаткан '{title}' темасына жооп берди.
+        
+        Кененирээк маалымат бул жерде:
+        {url}
+        
+        ---
+        
+        {content}
+        
+        ---
+        
+        Эгерде Сиз тема боюнча жаңы билдирүүлөрдү окубасаңыз, Сиз башка электрондук кат албайсыз.
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    follow: "Көзөмөлдөө"
+    following: "Көзөмөлдөө"
+    ignoring: "Четке кагуу"

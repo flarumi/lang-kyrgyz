@@ -1,0 +1,64 @@
+flarum-flags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      flag_posts_label: "Билдирүүлөргө жөнүндө арызданыңыз"
+      view_flags_label: "Модерацияда билдирүүлөрдү караңыз!"
+
+    # These translations are used in the Flags Settings modal dialog.
+    settings:
+      flag_own_posts_label: "Колдонуучуларга өз билдирүүлөрүн белгилөөгө уруксат бериңиз!"
+      guidelines_url_label: "Форумдун эрежелери (URL)"
+      title: "Орнотуулар"
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Flag Post modal dialog.
+    flag_post:
+      confirmation_message: "Эскертүү үчүн рахмат.  Биздин модераторлор сөзсүз түрдө бул билдирүүнү текшерип чыгышат."
+      dismiss_button: => core.ref.okay
+      reason_details_placeholder: "Кошумча маалымат (милдеттүү эмес)"
+      reason_inappropriate_label: "Мүмкүн эмес"
+      reason_inappropriate_text: "Билдирүү адепсиз, мазактоочу мүнөзгө ээ же <a>коомчулуктун эрежелерин</a> бузат."
+      reason_missing_message: "Сураныч, биздин модераторлор үчүн маалымат бериңиз."
+      reason_off_topic_label: "Темадан тышкары"
+      reason_off_topic_text: "Билдирүүнүн темага эч кандай тиешеси жок, башка жакка жылдырылышы керек."
+      reason_other_label: "Башка"
+      reason_spam_label: "Спам"
+      reason_spam_text: "Билдирүү жарнамалык мүнөзгө ээ."
+      submit_button: => flarum-flags.ref.flag_post
+      title: => flarum-flags.ref.flag_post
+
+    # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
+    flagged_posts:
+      empty_text: "Модерация кылуу боюнча билдирүүлөр жок"
+      item_text: "{username} <em>{discussion}</em> жөнүндө"
+      title: => flarum-flags.ref.flagged_posts
+      tooltip: => flarum-flags.ref.flagged_posts
+
+    # These translations are used by the frame displayed around flagged posts.
+    post:
+      dismiss_flag_button: "Арызды четке кагуу"
+      flagged_by_text: "{username} билдирүү боюнча арыз калтырды"
+      flagged_by_with_reason_text: "{username} билдирүү боюнча арыз калтырды, себеби: {reason}"
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      flag_button: "Арыздануу"
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    flag_post: "Жөнөтүү"
+    flagged_posts: "Арыздануулар"

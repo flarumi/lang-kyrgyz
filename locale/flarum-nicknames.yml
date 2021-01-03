@@ -1,0 +1,24 @@
+flarum-nicknames:
+  admin:
+    permissions:
+      edit_own_nickname_label: Лакап атыңызды түзөтүүгө уруксат бериңиз
+    settings:
+      max_label: Максималдуу лакап аттын узундугу
+      min_label: Минималдуу лакап аттын узундугу
+      regex_label: Текшерүү үчүн туруктуу сөз айкашы
+      unique_label: Сизге белгилүү лакап аттар керекпи?
+    wrong_driver: Бул кеңейтүү күчүнө кириши үчүн, <a><strong>негизги жөндөөлөрдөн</strong></a> көрүнүп турган аты-жөндүн драйвери катары "nickname" тандашыңыз керек.
+  api:
+    invalid_nickname_message: Берилген лакап ат жараксыз.  Сураныч, лакап аттарды колдонуу эрежелери жөнүндө көбүрөөк маалымат алуу үчүн форумдун администраторуна кайрылыңыз.
+  forum:
+    change_nickname:
+      submit_button: => core.ref.save_changes
+      title:  => flarum-nicknames.ref.change_nickname
+    edit_user:
+      nicknames_heading: => flarum-nicknames.ref.change_nickname
+      nicknames_text: Лакап ат
+    settings:
+      change_nickname_button: => flarum-nicknames.ref.change_nickname
+
+  ref:
+    change_nickname: Лакап атты өзгөртүү

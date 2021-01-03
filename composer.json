@@ -1,0 +1,37 @@
+{
+    "name": "flarumi/lang-kyrgyz",
+    "type": "flarum-extension",
+    "description": "Kyrgyz language pack.",
+    "keywords": ["locale"],
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^0.1.0-beta.15"
+    },
+	 "authors": [
+    {
+      "name": "Ravidin",
+      "role": "Author"
+    }
+  ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Киргизский",
+            "category": "language",
+            "info": {
+                "name": "Flarum"
+            },
+            "icon": {
+                "image": "icon.svg",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-locale": {
+            "code": "ky",
+            "title": "Киргизский"
+        }
+    }
+}

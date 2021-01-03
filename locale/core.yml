@@ -1,0 +1,649 @@
+core:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Appearance page.
+    appearance:
+      colored_header_label: "Түстүү жогорку аталыш"
+      colors_heading: "Түстөр"
+      colors_text: "Форумду стилдөө үчүн эки түстү тандаңыз.  Биринчиси бөлүп көрсөтүү түсү катары колдонулат, экинчиси стилдин элементтеринин фону катары колдонулат."
+      custom_footer_heading: "Төмөнкү колонтитул"
+      custom_footer_text: => core.ref.custom_footer_text
+      custom_header_heading: "Жогорку колонтитул"
+      custom_header_text: => core.ref.custom_header_text
+      custom_styles_heading: "Колдонуучунун стилдери"
+      custom_styles_text: "LESS/CSS колдонуучунун кодунун жардамы менен форумдун тышкы көрүнүшүн ыңгайлаштырыңыз, ал Flarum стандарттуу стилдөө конструкцияларын аныктайт."
+      dark_mode_label: "Караңгы абалы"
+      description: "Форумдун көрүнүшүн жана стилинин элементтерин ыңгайлаштырыңыз."
+      edit_css_button: "CSS түзөтүү"
+      edit_footer_button: => core.ref.custom_footer_title
+      edit_header_button: => core.ref.custom_header_title
+      enter_hex_message: "Сураныч, түс кодун HEX форматында киргизиңиз."
+      favicon_heading: "Favicon"
+      favicon_text: "Форум белгичеси катары көрсөтүлө турган сүрөттү жүктөө."
+      logo_heading: "Логотип"
+      logo_text: "Форум аталышынын ордуна көрсөтүлө турган сүрөтчөнү жүктөө."
+      submit_button: => core.ref.save_changes
+      title: Сырткы көрүнүшү
+
+    # These translations are used in the Basics page.
+    basics:
+      all_discussions_label: => core.ref.all_discussions
+      default_language_heading: "Демейки тил"
+      description: "Форумдун аталышы, тили жана башка форум орнотуулары."
+      display_name_heading: Көрсөтүлө турган аты
+      display_name_text: Көрсөтүлө турган аттары үчүн колдонулат драйверди тандоо. Демейки шартта, колдонуучунун аты көрсөтүлөт.
+      forum_description_heading: "Форумдун сүрөттөмөсү"
+      forum_description_text: "Коомчулуктун кыскача сүрөттөмөсүн киргизиңиз. Сүрөттөмө мета-тэгде пайда болот жана издөө тутумдарында көрсөтүлөт."
+      forum_title_heading: "Форумдун аталышы"
+      home_page_heading: "Негизги бет"
+      home_page_text: "Колдонуучулар форумга киргенде көрө турган баракты тандаңыз. Колдонуучунун маанилерин киргизүүдө форумдун тамырына салыштырмалуу жолду колдонуңуз."
+      saved_message: "Өзгөртүүлөр сакталды."
+      show_language_selector_label: "Тил которуштургучун көрсөтүү"
+      slug_driver_heading: "ЧПУ драйвери: {model}"
+      slug_driver_text: ЧПУ (СПК-кырг.) үчүн колдонула турган драйверди тандаңыз (адам окуй турган URL).
+      submit_button: => core.ref.save_changes
+      title: Негизги орнотуулар
+      welcome_banner_heading: "Саламдашуу баннери"
+      welcome_banner_text: "Форумдун бардык барактарында көрсөтүлө турган текстти киргизиңиз. Бул элементти форумдун конокторун тосуп алуу үчүн колдонуңуз."
+
+    # These translations are used in the Dashboard page.
+    dashboard:
+      clear_cache_button: "Кэшти тазалоо"
+      description: Сиздин форум биринчи караганда.
+      title: Интерактивдүү панели
+      tools_button: "Куралдар"
+
+    # These translations are used in the Edit Custom CSS modal dialog.
+    edit_css:
+      customize_text: "LESS/CSS колдонуучунун кодунун жардамы менен форумдун тышкы көрүнүшүн ыңгайлаштырыңыз, ал Flarum <a>стандарттуу стилдөө</a> конструкцияларын аныктайт."
+      submit_button: => core.ref.save_changes
+      title: "CSS түзөтүү"
+
+    # These translations are used in the Edit Custom Footer modal dialog.
+    edit_footer:
+      customize_text: => core.ref.custom_footer_text
+      submit_button: => core.ref.save_changes
+      title: => core.ref.custom_footer_title
+
+    # These translations are used in the Edit Group modal dialog.
+    edit_group:
+      color_label: => core.ref.color
+      delete_button: "Топту жок кылуу"
+      delete_confirmation: "Чын эле топту жок кылгыңыз келеби?  Бул топтогу колдонуучулар жок кылынбайт."
+      hide_label: "Форумда жашыруу"
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
+      name_label: "Аталышы"
+      plural_placeholder: "Көптүк саны (б.а. Модерлер)"
+      singular_placeholder: "Жалгыз саны (б.а. Модер)"
+      submit_button: => core.ref.save_changes
+      title: "Топту түзүү"
+
+    # These translations are used in the Edit Custom Header modal dialog.
+    edit_header:
+      customize_text: => core.ref.custom_header_text
+      submit_button: => core.ref.save_changes
+      title: => core.ref.custom_header_title
+
+    # These translations are used in the email page of the admin interface.
+    email:
+      addresses_heading: "Дарек"
+      description: "Каттарды жөнөтүү үчүн электрондук почтаны орнотуу."
+      driver_heading: "Драйверди тандаңыз"
+      driver_label: "Драйвер"
+      from_label: "Жөнөтүүчү"
+      mail_encryption_label: "Шифрлөө"
+      mail_host_label: "Хост"
+      mail_mailgun_domain_label: "Домен"
+      mail_mailgun_region_label: "Аймак"
+      mail_mailgun_secret_label: "Жашыруун ачкыч"
+      mail_password_label: => core.ref.password
+      mail_port_label: "Порт"
+      mail_username_label: => core.ref.username
+      mailgun_heading: "Mailgun орнотуулары"
+      not_sending_message: "Flarum электрондук каттарды жөнөтө албайт. Көйгөй тандалган драйверге байланыштуу же анын конфигурациясындагы ката болушу мүмкүн."
+      send_test_mail_button: Жөнөтүү
+      send_test_mail_heading: Сынак кат
+      send_test_mail_success: "Сынак кат ийгиликтүү жөнөтүлдү!"
+      send_test_mail_text: "Электрондук почта дарегиңизге жогоруда келтирилген конфигурацияны колдонуу менен кат жөнөтсөңүз болот - {email}."
+      smtp_heading: "SMTP орнотуулары"
+      submit_button: => core.ref.save_changes
+      title: => core.ref.email
+
+    # These translations are used on default extension pages.
+    extension:
+      confirm_uninstall: Бул аракет маалымат базасындагы бардык жазууларды жана кеңейтүүгө байланыштуу ресурстарды жок кылат. Сиз чындап эле улантууну каалайсызбы?
+      disabled: Өчүк
+      enabled: Күйүк
+      enable_to_see: Жөндөөлөрдү көрүү жана өзгөртүү үчүн кеңейтүүнү кошуңуз.
+      info_links:
+        discuss: Талкуулоо
+        documentation: Документтер
+        donate: Колдоо
+        source: Баштапкы код
+        support: Жардам
+        website: Сайт
+      no_permissions: Бул кеңейтүүнүн эч кандай укугу жок.
+      no_settings: Бул кеңейтүүнүн жөндөөлөрү жок.
+      open_modal: Орнотууларды ачуу
+      permissions_title: Укуктар
+      saved_message: Сиздин өзгөртүүлөрүңүз сакталды.      
+      uninstall_button: "Өчүрүү"
+
+    # These translations are used in the session secondary header.
+    header:
+      get_help: Жардам
+      log_out_button: => core.ref.log_out
+
+    # These translations are used in the modal dialog displayed when loading extensions.
+    loading:
+      title: "Сураныч, күтө туруңуз..."
+
+    # These translations are used in the navigation bar.
+    nav:
+      appearance_button: => core.admin.appearance.title
+      appearance_title: => core.admin.appearance.description
+      basics_button: => core.admin.basics.title
+      basics_title: => core.admin.basics.description
+      categories:
+        authentication: Авторлошуу
+        core: Форум
+        discussion: Баарлашуу
+        feature: Жакшыртуу
+        formatting: Форматтоо
+        language: Тилдер
+        moderation: Модерация
+        other: Башка кеңейтүүлөр
+        theme: Стилдер
+      dashboard_button: => core.admin.dashboard.title
+      dashboard_title: => core.admin.dashboard.description
+      email_button: => core.ref.email
+      email_title: => core.admin.email.description
+      permissions_button: => core.admin.permissions.title
+      permissions_title: => core.admin.permissions.description
+      search_placeholder: Кеңейтүүлөрдү издөө...
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      allow_post_editing_label: "Билдирүүнү түзөтүүгө уруксат берүү"
+      allow_renaming_label: "Аталышын өзгөртүүгө уруксат берүү"
+      create_heading: "Түзүү"
+      delete_discussions_forever_label: "Темаларды жок кылуу (физикалык жактан)"
+      delete_discussions_label: "Темаларды жок кылуу"
+      delete_posts_forever_label: "Билдирүүлөрдү жок кылуу (физикалык жактан)"
+      delete_posts_label: "Билдирүүлөрдү жок кылуу"
+      description: Колдонуучу топторунун укуктарын орнотуу.
+      edit_posts_label: "Билдирүүлөрдү түзөтүү"
+      edit_users_label: "Колдонуучуларды түзөтүү"
+      global_heading: "Жалпы"
+      moderate_heading: "Модерация"
+      new_group_button: "Жаңы топ"
+      participate_heading: "Катышуу"
+      post_without_throttle_label: "Күттүрбөй бир нече жолу жооп бериңиз"
+      read_heading: "Окуу"
+      rename_discussions_label: "Темалардын аталышын өзгөртүү"
+      reply_to_discussions_label: "Темада жооп бериңиз"
+      sign_up_label: "Каттоо"
+      start_discussions_label: "Тема түзүү"
+      title: Укуктар
+      view_discussions_label: "Теманы окуу"
+      view_hidden_groups_label: "Жашыруун топторду көрүңүз"
+      view_last_seen_at_label: "Соңку сапардын убактысын көрүү"
+      view_post_ips_label: "IP дарегин көрүү"
+      view_user_list_label: "Колдонуучулардын тизмесин көрүңүз"
+
+    # These translations are used in the dropdown menus on the Permissions page.
+    permissions_controls:
+      allow_indefinitely_button: "Чексиз"
+      allow_some_minutes_button: "{count} мүнөттө|{count} мүнөттө"
+      allow_ten_minutes_button: "10 мүнөттө"
+      allow_until_reply_button: "Жоопко чейин"
+      everyone_button: "Баары"
+      members_button: => core.group.members
+      signup_closed_button: "Жабык"
+      signup_open_button: "Ачык"
+
+    # These translations are used in the Settings modal dialog.
+    settings:
+      submit_button: => core.ref.save_changes
+
+    # These translations are used in image upload buttons.
+    upload_image:
+      remove_button: => core.ref.remove
+      upload_button: "Сүрөттү тандоо..."
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used in the Change Email modal dialog.
+    change_email:
+      confirm_password_placeholder: => core.ref.confirm_password
+      confirmation_message: => core.ref.confirmation_email_sent
+      dismiss_button: => core.ref.okay
+      incorrect_password_message: "Киргизилген сырсөз туура эмес."
+      submit_button: => core.ref.save_changes
+      title: => core.ref.change_email
+
+    # These translations are used in the Change Password modal dialog.
+    change_password:
+      send_button: "Сырсөздү email-га жөнөтүү"
+      text: "Сырсөздү өзгөртүү шилтемелерин email-га жөнөтүү үчүн төмөнкү баскычты басыңыз."
+      title: => core.ref.change_password
+
+    # These translations are used by the composer controls.
+    composer:
+      close_tooltip: "Жабуу"
+      exit_full_screen_tooltip: "Толук экран абалынан чыгуу"
+      full_screen_tooltip: "Жайып ачуу"
+      minimize_tooltip: "Жыйнап жабуу"
+      preview_tooltip: "Алдын ала көрүү"
+
+    # These translations are used by the composer when starting a discussion.
+    composer_discussion:
+      body_placeholder: "Билдирүү жазуу..."
+      discard_confirmation: "Сиз теманы жараткан жоксуз.  Теманы жокко чыгаргыңыз келеби?"
+      submit_button: "Жөнөтүү"
+      title: => core.ref.start_a_discussion
+      title_placeholder: "Теманын аталышы"
+
+    # These translations are used by the composer when editing a post.
+    composer_edit:
+      discard_confirmation: "Өзгөртүүлөрүңүздү сактай элексиз.  Алардан баш тартууну каалайсызбы?"
+      edited_message: Your edit was made.
+      post_link: "{discussion} #{number} билдирүү"
+      submit_button: => core.ref.save_changes
+      view_button: => core.ref.view
+
+    # These translations are used by the composer when replying to a discussion.
+    composer_reply:
+      body_placeholder: => core.ref.write_a_reply
+      discard_confirmation: "Сиз жооп жөнөткөн жоксуз.  Билдирүүнү жокко чыгаргыңыз келеби?"
+      posted_message: "Сиздин жообуңуз жарыяланды"
+      submit_button: "Жөнөтүү"
+      view_button: => core.ref.view
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      cannot_reply_button: "Жооп бере албай жатам"
+      cannot_reply_text: "Бул темага жооп жарыялоого укугуңуз жок."
+      delete_button: => core.ref.delete
+      delete_confirmation: "Чын эле теманы жок кылгыңыз келеби?"
+      delete_forever_button: => core.ref.delete_forever
+      log_in_to_reply_button: "Кирүү"
+      rename_button: => core.ref.rename
+      reply_button: => core.ref.reply
+      restore_button: => core.ref.restore
+
+    # These translations are used in the discussion list.
+    discussion_list:
+      empty_text: "Бул жерде эч кандай тема жок көрүнөт. Сиз эмне үчүн жаңысын түзбөйсүз?"
+      load_more_button: => core.ref.load_more
+      mark_as_read_tooltip: "Окулган деп белгилөө"
+      replied_text: "{username} жооп берди {ago}"
+      started_text: "{username} түздү {ago}"
+
+    # These translations are used in the Edit User modal dialog (admin function).
+    edit_user:
+      activate_button: "Колдонуучуну ырастоо"
+      email_heading: => core.ref.email
+      email_label: => core.ref.email
+      groups_heading: "Топтор"
+      password_heading: => core.ref.password
+      password_label: => core.ref.password
+      set_password_label: "Жаңы сырсөздү коюңуз"
+      submit_button: => core.ref.save_changes
+      title: "Колдонуучуну өзгөртүү"
+      username_heading: => core.ref.username
+      username_label: => core.ref.username
+
+    # These translations are used in the Forgot Password modal dialog.
+    forgot_password:
+      dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
+      email_sent_message: "Сырсөзүңүздү баштапкы абалга келтирүү үчүн шилтеме камтылган электрондук кат жөнөттүк. Бир нече мүнөттүн ичинде электрондук кат келбесе, спам папкаңызды текшериңиз."
+      not_found_message: "Көрсөтүлгөн email дареги табылган жок.."
+      submit_button: "Сырсөздү калыбына келтирүү"
+      text: "Сиз email-ды киргизиңиз, биз сизге сырсөздү баштапкы абалга келтирүү үчүн шилтеме жөнөтөбүз."
+      title: "Сырсөзүңүздү унуттуңузбу?"
+
+    # These translations are used in the header and session dropdown menu.
+    header:
+      admin_button: "Админ-панели"
+      back_to_index_tooltip: "Темалардын тизмесине кайтуу"
+      log_in_link: => core.ref.log_in
+      log_out_button: => core.ref.log_out
+      profile_button: "Менин профилим"
+      search_placeholder: "Издөө..."
+      settings_button: => core.ref.settings
+      sign_up_link: => core.ref.sign_up
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      all_discussions_link: => core.ref.all_discussions
+      cannot_start_discussion_button: "Түзүү мүмкүн эмес"
+      mark_all_as_read_confirmation: "Бардык темаларды окулган деп белгилегисиңиз келеби?"
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      meta_title_text: => core.ref.all_discussions
+      mark_as_read_tooltip: "Окулган деп белгилөө"
+      refresh_tooltip: "Жаңылоо"
+      start_discussion_button: => core.ref.start_a_discussion
+
+    # These translations are used by the sorting control above the discussion list.
+    index_sort:
+      latest_button: "Соңку"
+      newest_button: "Жаңы"
+      oldest_button: "Эски"
+      relevance_button: "Релеванттуулугу боюнча"
+      top_button: "Таанымал"
+
+    # These translations are used in the Log In modal dialog.
+    log_in:
+      forgot_password_link: "Сырсөздү унуттуңузбу?"
+      invalid_login_message: "Сиздин кирүү дайындарыңыз туура эмес."
+      password_placeholder: => core.ref.password
+      remember_me_label: "Мени эстеп кал"
+      sign_up_text: "Сизде дагы деле аккаунт жокпу? <a>Каттоотодон өтүңүз</a>"
+      submit_button: => core.ref.log_in
+      title: => core.ref.log_in
+      username_or_email_placeholder: "Колдонуучунун аты же email"
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      discussion_renamed_text: "{username} аталышын өзгөрттү"
+      empty_text: "Эскертүүлөр жеткиликтүү эмес"
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      title: => core.ref.notifications
+      tooltip: => core.ref.notifications
+
+    # These translations are used by tooltips displayed for individual posts.
+    post:
+      edited_text: "Өзгөртүлдү"
+      edited_tooltip: "{username} өзгөрттү {ago}"
+      number_tooltip: "Билдирүү #{number}"
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      delete_button: => core.ref.delete
+      delete_confirmation: "Билдирүүнү биротоло өчүргүңүз келеби?  Бул аракетти жокко чыгаруу мүмкүн эмес."
+      delete_forever_button: => core.ref.delete_forever
+      edit_button: => core.ref.edit
+      hide_confirmation: "Билдирүүнү чын эле өчүргүңүз келеби?"
+      restore_button: => core.ref.restore
+
+    # These translations are used in the scrubber to the right of the post stream.
+    post_scrubber:
+      now_link: "Жаңы"
+      original_post_link: "Эски"
+      unread_text: "{count} окулган жок"
+      viewing_text: "{count} билдирүүлөрдүн {index}|{count} билдирүүлөрдүн {index}"
+
+    # These translations are displayed between posts in the post stream.
+    post_stream:
+      discussion_renamed_old_tooltip: 'Эски аталышы: "{old}"'
+      discussion_renamed_text: '{username} аталышын "{old}" дегенден "{new}" деп өзгөрттү".'
+      load_more_button: => core.ref.load_more
+      reply_placeholder: => core.ref.write_a_reply
+      time_lapsed_text: "{period} кийин"
+
+    # These translations are used by the rename discussion modal.
+    rename_discussion:
+      submit_button: => core.ref.rename
+      title: "Теманын атын өзгөртүү"
+
+    # These translations are used by the search results dropdown list.
+    search:
+      all_discussions_button: 'Сурам боюнча издөө: "{query}"'
+      discussions_heading: => core.ref.discussions
+      users_heading: => core.ref.users
+
+    # These translations are used in the Settings page.
+    settings:
+      account_heading: "Аккаунт"
+      change_email_button: => core.ref.change_email
+      change_password_button: => core.ref.change_password
+      notifications_heading: => core.ref.notifications
+      notify_by_email_heading: => core.ref.email
+      notify_by_web_heading: "Веб"
+      notify_discussion_renamed_label: "Темамдын аталышы өзгөртүү"
+      privacy_disclose_online_label: "Онлайн абалын көрсөтүү"
+      privacy_heading: "Купуялуулук"
+      title: => core.ref.settings
+
+    # These translations are used in the Sign Up modal dialog.
+    sign_up:
+      dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
+      log_in_text: "Буга чейин катталгансызбы? <a>Кирүү</a>"
+      password_placeholder: => core.ref.password
+      submit_button: => core.ref.sign_up
+      title: => core.ref.sign_up
+      username_placeholder: => core.ref.username
+      welcome_text: "Салам, {username}!"
+
+    # These translations are used in the user profile page and profile popup.
+    user:
+      avatar_remove_button: => core.ref.remove
+      avatar_upload_button: "Жүктөө"
+      avatar_upload_tooltip: "Жаңы аватар жүктөө"
+      discussions_link: => core.ref.discussions
+      in_discussion_text: ' "{discussion}" ичинде'
+      joined_date_text: "Каттоо: {ago}"
+      online_text: "Тармакта"
+      posts_empty_text: "Билдирүүлөр жок."
+      posts_link: => core.ref.posts
+      posts_load_more_button: => core.ref.load_more
+      settings_link: => core.ref.settings
+
+    # These translations are found on the user profile page (admin function).
+    user_controls:
+      button: "Башкаруу"
+      delete_button: => core.ref.delete
+      delete_confirmation: "Колдонуучуну чын эле өчүргүңүз келеби? Колдонуучулардын бардык билдирүүлөрү да өчүп жок болот."
+      delete_error_message: "<i>{username} ({email})</i> колдонуучуну өчүрүүгө мүмкүн болгон жок"
+      delete_success_message: "Колдонуучу <i>{username} ({email})</i> жок кылынды"
+      edit_button: => core.ref.edit
+
+    # These translations are used in the alert that is shown when a new user has not confirmed their email address.
+    user_email_confirmation:
+      alert_message: => core.ref.confirmation_email_sent
+      resend_button: "Электрондук почта аркылуу ырастоону кайра жөнөтүү"
+      sent_message: "Жөнөтүлдү"
+
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      hidden_tooltip: "Жашыруун"
+
+    # These translations are displayed as error messages.
+    error:
+      dependent_extensions_message: "Төмөнкү көзкаранды кеңейтүүлөр өчүрүлмөйүнчө, {extension} өчүрүү мүмкүн эмес: {extensions}"
+      generic_message: "Ой!  Бир жерден ката кетти.  Сураныч, баракты жаңылап дагы аракет кылыпкөрүңүз."
+      missing_dependencies_message: "Төмөнкү көзкаранды кеңейтүүлөр күйгүзүлгөнгө чейин, {extension} күйгүзүү мүмкүн эмес: {extensions}"
+      not_found_message: "Суралган нерсе табылган жок"
+      permission_denied_message: "Бул аракетти аткарууга уруксатыңыз жок."
+      rate_limit_exceeded_message: "Сиз билдирүүлөрдү өтө эле көп жарыялайсыз. Сураныч, бир нече секунддан кийин дагы аракет кылып көрүңүз."
+
+    # These translations are used as suffixes when abbreviating numbers.
+    number_suffix:
+      kilo_text: "K"
+      mega_text: "M"
+
+    # These translations are used to punctuate a series of items.
+    series:
+      glue_text: ", "
+      three_text: "{first}, {second}, жана {third}"
+      two_text: "{first} жана {second}"
+
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[өчүрүлдү]"
+
+  # Translations in this namespace are used in views other than Flarum's normal JS client.
+  views:
+
+    # Translations in this namespace are displayed by the basic HTML content loader.
+    content:
+      javascript_disabled_message: "Бул сайт заманбап браузерде JavaScript иштетилгенде жакшы көрүүгө болот."
+      load_error_message: "Бул сайттын толук версиясын жүктөп жатканда бир жерден ката кетти."
+      loading_text: "Жүктөлүүдө..."
+
+    # Translations in this namespace are displayed in the basic HTML discussion view.
+    discussion:
+      next_page_button: => core.ref.next_page
+      previous_page_button: => core.ref.previous_page
+
+    # Translations in this namespace are displayed when Flarum encounters an error.
+    error:
+      csrf_token_mismatch: "Сиз көптөн бери аракетсиз болуп келгенсиз."
+      csrf_token_mismatch_return_link: "Артка кайтып, дагы бир жолу аракет кылып көрүңүз"
+      invalid_confirmation_token: "Ырастоо шилтемеси жараксыз же мурун колдонулган."
+      not_authenticated: "Бул баракчага кирүүгө уруксатыңыз жок. Аккаунтуңузга киргенден кийин дагы аракет кылып көрүңүз."
+      not_found: "Сурамыңыз боюнча барак табылган жок."
+      not_found_return_link: "{forum}га кайтуу"
+      permission_denied: "Бул баракчага кирүү укугуңуз жок."
+      unknown: "Баракты жүктөө учурунда ката кетти."
+
+    # Translations in this namespace are displayed by the basic HTML discussion index.
+    index:
+      all_discussions_heading: => core.ref.all_discussions
+      next_page_button: => core.ref.next_page
+      previous_page_button: => core.ref.previous_page
+
+    # Translations in this namespace are displayed by the Log Out confirmation interface.
+    log_out:
+      log_out_button: => core.ref.log_out
+      log_out_confirmation: "Сиз чын эле {forum} дан чыккыңыз келеби?"
+      title: => core.ref.log_out
+
+    # Translations in this namespace are displayed by the Reset Password interface.
+    reset_password:
+      confirm_password_label: "Сырсөздү ырастоо"
+      new_password_label: "Жаңы сырсөз"
+      submit_button: => core.ref.save_changes
+      title: => core.ref.reset_your_password
+
+  # Translations in this namespace are used in messages output by the API.
+  api:
+    invalid_username_message: "Колдонуучунун аты тамгаларды, сандарды жана сызыкчаларды гана камтышы мүмкүн."
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when users register new accounts.
+    activate_account:
+      subject: "Сиздин аккаунттуңузду активдештирүү"
+      body: |
+        Салам, {username}!
+
+        Кимдир бирөө (Сиз деп үмүттөнөбүз!) Бул электрондук почта дареги менен {forum} форумуна катталды.
+
+        Эгер Сиз болсоңуз, анда жөн гана шилтемени басыңыз, ошондо Сиздин аккаунтуңуз жандырылат:
+        {url}
+
+        Эгерде сиз катталбаган болсоңуз, сураныч, анда бул билдирүүнү четке кагыңыз.
+
+    # These translations are used in emails sent when users change their email address.
+    confirm_email:
+      subject: "Жаңы email дарегин ырастоо"
+      body: |
+        Салам, {username},
+
+        Кимдир бирөө (Сиз деп үмүттөнөбүз!) {forum} дарегиндеги электрондук почта дарегин өзгөрттү.
+
+        Эгер ал Сиз болсоңуз, анда жөн гана шилтемени басыңыз, Сиздин электрондук почтаңыздын дареги ырасталат:
+        {url}
+
+        Эгер сиз эмес болсоңуз, анда бул билдирүүнү четке кагыңыз.
+
+    # These translations are used in emails sent when users ask to reset their passwords.
+    reset_password:
+      subject: => core.ref.reset_your_password
+      body: |
+        Салам, {username},
+
+        Кимдир бирөө (Сиз деп үмүттөнөбүз!) {forum} дан сиздин аккаунтуңуздун сырсөзүн баштапкы абалга келтирүү өтүнүчүн жөнөттү.
+
+        Эгер Сиз болсоңуз, анда сырсөздү калыбына келтирүү үчүн шилтемени басыңыз:
+        {url}
+
+        Эгер Сиз сырсөздү өзгөрткүңүз келбесе, анда бул билдирүүнү четке каксаңыз, эч нерсе болбойт.
+
+    # These translations are used when testing mailing configuration
+    send_test:
+      subject: Flarum Email Сынак каты
+      body: |
+        Салам {username},
+        
+        Бул форумдагы email-дын конфигурациясы талаптагыдай иштеп жаткандыгын тастыктаган сынак кат жөнөтүү.
+        
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    all_discussions: "Бардык темалар"
+    change_email: "Email өзгөртүү"
+    change_password: "Сырсөздү өзгөртүү"
+    color: "Түс"                                   # Referenced by flarum-tags.yml
+    confirm_password: "Сырсөздү ырастаңыз"
+    confirmation_email_sent: "Биз {email} дарегине ырастоочу электрондук кат жөнөттүк. Жакын арада катты албасаңыз, спам папкаңызды текшериңиз."
+    custom_footer_text: "Атайын HTML, ал барактын эң төмөнкү бөлүгүндө көрсөтүлөт."
+    custom_footer_title: "Төмөнкү колонтитулду түзөтүү"
+    custom_header_text: "Атайын HTML, ал барактын эң жогорку бөлүгүндө көрсөтүлөт, Flarumдун жогору жагында."
+    custom_header_title: "Жогорку колонтитулду түзөтүү"
+    delete: "Өчүрүү"
+    delete_forever: "Өчүрүү (физ.)"
+    discussions: "Темалар"                        # Referenced by flarum-statistics.yml
+    edit: "Түзөтүү"
+    email: "Электрондук почта"
+    icon: "Белги"
+    icon_text: "<a>Font Awesome</a>ден кайсы бир сүрөтчөлөр классынын атын киргизиңиз, <code>fa-</code> префикси <em>жок</em>"
+    load_more: "Дагы жүктөө"
+    log_in: "Кирүү"
+    log_out: "Чыгуу"
+    mark_all_as_read: "Баарын окулган деп белгилөө"
+    next_page: "Кийинки бет"
+    notifications: "Эскертмелер"
+    okay: "Oк"                                      # Referenced by flarum-tags.yml
+    password: "Сырсөз"
+    posts: "Билдирүүлөр"                              # Referenced by flarum-statistics.yml
+    previous_page: "Мурунку бет"
+    remove: "Өчүрүү"
+    rename: "Атын өзгөртүү"
+    reply: "Жооп берүү"                               # Referenced by flarum-mentions.yml
+    reset_your_password: "Сырсөздү баштапкы абалга келтирүү"
+    restore: "Калыбына келтирүү"
+    save_changes: "Сактоо"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
+    settings: "Орнотуулар"
+    sign_up: "Каттоо"
+    some_others: "{count} башкасына|{count} башкасына"   # Referenced by flarum-likes.yml, flarum-mentions.yml
+    start_a_discussion: "Тема түзүү"
+    username: "Колдонуучунун аты"
+    users: "Колдонуучулар"                           # Referenced by flarum-statistics.yml
+    view: "Көрүү"
+    write_a_reply: "Жообуңузду жазыңыз..."
+    you: "Сиз"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
+
+  ##
+  # GROUP NAMES - These keys are translated at the back end.
+  ##
+
+  # Translations in this namespace are used to translate default group names.
+  group:
+    admin: "Админ"
+    admins: "Админдер"
+    guest: "Конок"
+    guests: "Коноктор"
+    member: "Колдонуучу"
+    members: "Колдонуучулар"
+    mod: "Модер"
+    mods: "Модерлер"
