@@ -432,7 +432,7 @@ core:
       avatar_upload_button: "Жүктөө"
       avatar_upload_tooltip: "Жаңы аватар жүктөө"
       discussions_link: => core.ref.discussions
-      in_discussion_text: ' "{discussion}"'
+      in_discussion_text: 'ичинде "{discussion}"'
       joined_date_text: "Катталган күнү: {ago}"
       online_text: "Тармакта"
       posts_empty_text: "Билдирүүлөр жок."
@@ -607,7 +607,7 @@ core:
     email: "Электрондук почта"
     icon: "Белги"
     icon_text: "<a>Font Awesome</a>ден кайсы бир сүрөтчөлөр классынын атын киргизиңиз, <code>fa-</code> префикси <em>жок</em>"
-    load_more: "Дагы жүктөө»»»"
+    load_more: "Дагы жүктөө..."
     log_in: "Кирүү"
     log_out: "Чыгуу"
     mark_all_as_read: "Баарын окулган деп белгилөө"
