@@ -1,52 +1,40 @@
-// Kyrgyz tili [ky]
-function plural(word, num) {
-  const forms = word.split('_')
-  return num % 10 === 1 && num % 100 !== 11 ? forms[0] : (num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2]) // eslint-disable-line
-}
-function relativeTimeWithPlural(number, withoutSuffix, key) {
-  const format = {
-    mm: withoutSuffix ? 'мүнөт_мүнөттөр_мүнөт' : 'мүнөт_мүнөттөр_мүнөт',
-    hh: 'саат_саат_саат',
-    dd: 'күн_күн_күн',
-    MM: 'ай_ай_ай',
-    yy: 'жыл_жыл_жыл'
-  }
-  if (key === 'm') {
-    return withoutSuffix ? 'мүнөт' : 'мүнөт'
-  }
-  return `${number} ${plural(format[key], +number)}`
-}
+// Kyrgyz [ky]
+import dayjs from 'dayjs'
 
-dayjs.locale({
+const locale = {
   name: 'ky',
   weekdays: 'Жекшемби_Дүйшөмбү_Шейшемби_Шаршемби_Бейшемби_Жума_Ишемби'.split('_'),
-  weekdaysShort: 'Жкб_Дшб_Шей_Шар_Бшб_Жум_Ишб'.split('_'),
-  weekdaysMin: 'Жк_Дб_Ше_Ша_Бш_Жу_Иб'.split('_'),
-  months: 'Янв_Фев_Мар_Апр_Май_Июн_Июл_Авг_Сен_Окт_Ноя_Дек'.split('_'),
-  monthsShort: 'Янв_Фев_Мар_Апр_Май_Июн_Июл_Авг_Сен_Окт_Ноя_Дек'.split('_'),
-  ordinal: n => `${n}.`,
+  months: 'январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'.split('_'),
   weekStart: 1,
+  weekdaysShort: 'Жек_Дүй_Шей_Шар_Бей_Жум_Ише'.split('_'),
+  monthsShort: 'янв_фев_март_апр_май_июнь_июль_авг_сен_окт_ноя_дек'.split('_'),
+  weekdaysMin: 'Жк_Дй_Шй_Шр_Бй_Жм_Иш'.split('_'),
+  ordinal: n => n,
   formats: {
-    LT: 'H:mm',
-    LTS: 'H:mm:ss',
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
     L: 'DD.MM.YYYY',
     LL: 'D MMMM YYYY',
-    LLL: 'D MMM YYYY в H:mm',
-    LLLL: 'D MMM YYYY в H:mm'
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm'
   },
   relativeTime: {
-    future: '%s аркылуу',
-    past: '%s артка',
-    s: 'бир нече секунд',
-    m: relativeTimeWithPlural,
-    mm: relativeTimeWithPlural,
-    h: 'саат',
-    hh: relativeTimeWithPlural,
-    d: 'күн',
-    dd: relativeTimeWithPlural,
-    M: 'ай',
-    MM: relativeTimeWithPlural,
-    y: 'жыл',
-    yy: relativeTimeWithPlural
-  },
-})
+    future: '%s ичинде',
+    past: '%s мурун',
+    s: 'бирнече секунд',
+    m: 'бир мүнөт',
+    mm: '%d мүнөт',
+    h: 'бир саат',
+    hh: '%d саат',
+    d: 'бир күн',
+    dd: '%d күн',
+    M: 'бир ай',
+    MM: '%d ай',
+    y: 'бир жыл',
+    yy: '%d жыл'
+  }
+}
+
+dayjs.locale(locale, null, true)
+
+export default locale

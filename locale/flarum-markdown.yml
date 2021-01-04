@@ -11,7 +11,7 @@ flarum-markdown:
     composer:
       bold_tooltip: "Калың текст"
       code_tooltip: "Код"
-      header_tooltip: "Аталышы"
+      header_tooltip: "Башжазуу"
       image_tooltip: "Сүрөт кошуу"
       italic_tooltip: "Курсив текст"
       link_tooltip: "Шилтеме"

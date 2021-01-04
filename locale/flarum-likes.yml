@@ -21,11 +21,11 @@ flarum-likes:
 
     # These translations are displayed beneath individual posts.
     post:
-      like_link: "Мага жагат"
-      liked_by_self_text: "{users} жактырды"  # Can be pluralized to agree with the number of users!
+      like_link: "Мага жакты"
+      liked_by_self_text: "{users}ге жакты"  # Can be pluralized to agree with the number of users!
       liked_by_text: "{users} бул жагат|{users} бул жагат"
       others_link: => core.ref.some_others
-      unlike_link: "Эми аны жактырбайм"
+      unlike_link: "Мага жакпайт"
       you_text: => core.ref.you
 
     # These translations are used by the Users Who Like This modal dialog.

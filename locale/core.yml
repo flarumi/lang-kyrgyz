@@ -189,7 +189,7 @@ core:
       read_heading: "Окуу"
       rename_discussions_label: "Темалардын аталышын өзгөртүү"
       reply_to_discussions_label: "Темада жооп бериңиз"
-      sign_up_label: "Каттоо"
+      sign_up_label: "Катталуу"
       start_discussions_label: "Тема түзүү"
       title: Укуктар
       view_discussions_label: "Теманы окуу"
@@ -255,7 +255,7 @@ core:
     # These translations are used by the composer when editing a post.
     composer_edit:
       discard_confirmation: "Өзгөртүүлөрүңүздү сактай элексиз.  Алардан баш тартууну каалайсызбы?"
-      edited_message: Your edit was made.
+      edited_message: Сиздин түзөтүүңүз кошулду.
       post_link: "{discussion} #{number} билдирүү"
       submit_button: => core.ref.save_changes
       view_button: => core.ref.view
@@ -296,7 +296,7 @@ core:
       groups_heading: "Топтор"
       password_heading: => core.ref.password
       password_label: => core.ref.password
-      set_password_label: "Жаңы сырсөздү коюңуз"
+      set_password_label: "Жаңы сырсөздү киргизиңиз"
       submit_button: => core.ref.save_changes
       title: "Колдонуучуну өзгөртүү"
       username_heading: => core.ref.username
@@ -309,8 +309,8 @@ core:
       email_sent_message: "Сырсөзүңүздү баштапкы абалга келтирүү үчүн шилтеме камтылган электрондук кат жөнөттүк. Бир нече мүнөттүн ичинде электрондук кат келбесе, спам папкаңызды текшериңиз."
       not_found_message: "Көрсөтүлгөн email дареги табылган жок.."
       submit_button: "Сырсөздү калыбына келтирүү"
-      text: "Сиз email-ды киргизиңиз, биз сизге сырсөздү баштапкы абалга келтирүү үчүн шилтеме жөнөтөбүз."
-      title: "Сырсөзүңүздү унуттуңузбу?"
+      text: "Сиз email киргизиңиз, биз сизге сырсөздү баштапкы абалга келтирүү үчүн шилтеме жөнөтөбүз."
+      title: "Сырсөзүңүздү унутуп калдыңызбы?"
 
     # These translations are used in the header and session dropdown menu.
     header:
@@ -356,14 +356,14 @@ core:
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
       discussion_renamed_text: "{username} аталышын өзгөрттү"
-      empty_text: "Эскертүүлөр жеткиликтүү эмес"
+      empty_text: "Эскертмелер жок"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
     # These translations are used by tooltips displayed for individual posts.
     post:
-      edited_text: "Өзгөртүлдү"
+      edited_text: "өзгөртүлгөн"
       edited_tooltip: "{username} өзгөрттү {ago}"
       number_tooltip: "Билдирүү #{number}"
 
@@ -419,7 +419,7 @@ core:
     sign_up:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      log_in_text: "Буга чейин катталгансызбы? <a>Кирүү</a>"
+      log_in_text: "Мурда форумга катталгансызбы? <a>Кирүү</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
@@ -432,8 +432,8 @@ core:
       avatar_upload_button: "Жүктөө"
       avatar_upload_tooltip: "Жаңы аватар жүктөө"
       discussions_link: => core.ref.discussions
-      in_discussion_text: ' "{discussion}" ичинде'
-      joined_date_text: "Каттоо: {ago}"
+      in_discussion_text: ' "{discussion}"'
+      joined_date_text: "Катталган күнү: {ago}"
       online_text: "Тармакта"
       posts_empty_text: "Билдирүүлөр жок."
       posts_link: => core.ref.posts
@@ -601,13 +601,13 @@ core:
     custom_header_text: "Атайын HTML, ал барактын эң жогорку бөлүгүндө көрсөтүлөт, Flarumдун жогору жагында."
     custom_header_title: "Жогорку колонтитулду түзөтүү"
     delete: "Өчүрүү"
-    delete_forever: "Өчүрүү (физ.)"
+    delete_forever: "Өчүрүү"
     discussions: "Темалар"                        # Referenced by flarum-statistics.yml
     edit: "Түзөтүү"
     email: "Электрондук почта"
     icon: "Белги"
     icon_text: "<a>Font Awesome</a>ден кайсы бир сүрөтчөлөр классынын атын киргизиңиз, <code>fa-</code> префикси <em>жок</em>"
-    load_more: "Дагы жүктөө"
+    load_more: "Дагы жүктөө»»»"
     log_in: "Кирүү"
     log_out: "Чыгуу"
     mark_all_as_read: "Баарын окулган деп белгилөө"
@@ -618,19 +618,19 @@ core:
     posts: "Билдирүүлөр"                              # Referenced by flarum-statistics.yml
     previous_page: "Мурунку бет"
     remove: "Өчүрүү"
-    rename: "Атын өзгөртүү"
+    rename: "Өзгөртүү"
     reply: "Жооп берүү"                               # Referenced by flarum-mentions.yml
     reset_your_password: "Сырсөздү баштапкы абалга келтирүү"
     restore: "Калыбына келтирүү"
     save_changes: "Сактоо"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: "Орнотуулар"
-    sign_up: "Каттоо"
+    sign_up: "Катталуу"
     some_others: "{count} башкасына|{count} башкасына"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: "Тема түзүү"
     username: "Колдонуучунун аты"
     users: "Колдонуучулар"                           # Referenced by flarum-statistics.yml
     view: "Көрүү"
-    write_a_reply: "Жообуңузду жазыңыз..."
+    write_a_reply: "Жооп жазыңыз..."
     you: "Сиз"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##

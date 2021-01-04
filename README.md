@@ -1,15 +1,15 @@
-## Киргизская локализация для Flarum
+## Flarum үчүн Кыргызча локалдаштыруу
 
-Готовый киргизскийз языковой пакет
+Даяр Кыргыз тили топтому
 
-Автор: Ravidin
+Котормонун автору: Ravidin
 
-## Установка
+## Орнотуу
 
 ```
 composer require flarumi/lang-kyrgyz
 ```
 
-## Ссылки
+## Шилтемелер
   - [Github](https://github.com/flarumi/lang-kyrgyz)
-  - [Packagist](https://packagist.org/packages/flarumi/flarumi/lang-kyrgyz)
+  - [Packagist](https://packagist.org/packages/flarumi/lang-kyrgyz)

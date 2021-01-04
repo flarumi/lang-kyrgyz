@@ -18,7 +18,7 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "Киргизский",
+            "title": "Кыргызча",
             "category": "language",
             "info": {
                 "name": "Flarum"
@@ -31,7 +31,7 @@
         },
         "flarum-locale": {
             "code": "ky",
-            "title": "Киргизский"
+            "title": "Кыргызча"
         }
     }
 }
